@@ -3,48 +3,90 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+/* font style */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
-.container {
-    width: 1140px;
-  height: 698px;
-  margin: auto;
-  padding: 0 20px;
-  box-sizing: border-box
+/* button style */
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  background-color: rgba(78, 71, 255, 1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 36px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 198, 255, 0.7);
+}
+
+/* font families for titles */
+.title-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.title-font-disc {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Shared Style */
+.primary-color {
+  color: rgba(78, 71, 255, 1);
+}
+
+.title-color {
+  color: rgba(37, 36, 50, 1);
 }
 
 /* Header */
 header {
   background-image: url("images/Hero-bg.png");
-  background-size: cover;
-  padding: 100px 0 140px;
+  gap: 158px;
+  padding: 0 0 200px 0;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  padding: 50px 150px;
   align-items: center;
-  padding: 30px 0;
-}
-
-.nav-logo {
-  font-size: 24px;
-  font-weight: 900;
-  color: #4e47ff;
-  text-transform: uppercase;
 }
 
 .nav-title {
-  font-size: 48px;
-  font-weight: 800;
-  color: #252432;
-  text-align: center;
-  margin-top: 40px;
+  font-size: 65px;
 }
 
 .head-title {
   text-align: center;
-  margin-top: 30px;
+  gap: 37px;
+  padding: 0 300px;
+  margin: 0 150px;
 }
+
+/* logo section */
+.nav-logo {
+  font-size: 34px;
+  font-weight: 900;
+}
+
 
 /* Button */
 .btn {
@@ -316,23 +358,11 @@ main section {
 
 /* Contact Section */
 .contact-section {
-  width: 1140px;
-  height: 632px;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  box-sizing: border-box;
-  padding: 0 10px;
-  gap: 20px;
-}
-
-.touch-left {
-  width: 528px;
-  height: 232px;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 30px 150px;
+  gap: 100px;
 }
 
 .touch-left h2 {
@@ -344,15 +374,12 @@ main section {
 }
 
 .contact-right {
-  width: 497px;
-  height: 490px;
   display: flex;
   flex-direction: column;
+  width: 497px;
   gap: 19px;
-  padding: 0 0 0 20px; /* বাম পাশে একটু গ্যাপ */
-  box-sizing: border-box;
+  padding-right: 150px;
 }
-
 
 .contact-form {
   display: flex;
@@ -383,45 +410,19 @@ main section {
   color: rgba(0, 0, 0, 0.5);
 }
 
-
-/* Footer */
-footer {
-  background-color: #fff;
-  padding: 60px 0;
-  text-align: center;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: #8987a1;
-  font-size: 14px;
-}
-
+/* Footer Section */
 footer {
   margin: 0;
 }
 
 .footer-section {
-    position: center;
-  width: 1140px;
-  height: 428px;
-  left: 454px; 
-  top: 104px; 
-  margin: auto;
-  padding: 118px 0 0;
+  background-color: #FFFFFF;
+  max-width: 1440px;
   text-align: center;
-  background-color: #ffffff;
+  height: 428px;
+  gap: 30px;
+  padding: 118px 455px 0px;
 }
-
 
 .footer-logo {
   color: rgba(78, 71, 255, 1);
@@ -454,4 +455,3 @@ footer {
 .footer-nav li {
   padding-top: 20px;
 }
-
