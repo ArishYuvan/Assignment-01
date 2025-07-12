@@ -305,19 +305,17 @@ main section {
 }
 
 
-/* Focus section */
+/* Focus Section */
 .focus-section {
-  width: 1140px;
-  height: auto;
-  padding: 40px 40px;
-  margin: auto;
-  background-color: #FFFFFF;
-  text-align: center;
+  background-color: #fff;
   border-radius: 24px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  padding: 60px 40px 80px;  /* ভালো প্যাডিং দাও উপরে ও নিচে */
+  margin: 80px auto; /* focus-section ও contact-section এর মধ্যে স্পেস রাখবে */
+  text-align: center;
+  max-width: 1140px;
   box-sizing: border-box;
 }
-
 
 .focus-title {
   font-size: 50px;
@@ -335,7 +333,6 @@ main section {
 }
 
 .focus-button {
-  display: inline-block;
   background-color: #2563eb;
   color: white;
   padding: 12px 24px;
@@ -344,55 +341,70 @@ main section {
   font-weight: 500;
   border: none;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 
 .focus-section img {
   max-width: 100%;
   width: 840px;
-  height: 364px;
+  height: auto;
   border-radius: 24px;
-  margin: 20px auto 0;
   display: block;
+  margin: 0 auto;
 }
 
 
 /* Contact Section */
 .contact-section {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap; /* মোবাইলে নিচে নেমে যাবে */
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto 100px; /* নিচে স্পেস রাখতে মার্জিন */
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.touch-left {
+  flex: 1 1 45%;
+  display: flex;
   align-items: center;
-  padding: 30px 150px;
-  gap: 100px;
+  justify-content: center;
+  min-width: 280px;
 }
 
 .touch-left h2 {
-  font-size: 97px;
-  color: #000000;
-  line-height: 120%;
-  margin: 0 215px 200px 150px;
-  padding-top: 200px;
+  font-size: 4.5rem; /* 72px */
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
 }
 
 .contact-right {
+  flex: 1 1 45%;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
-  width: 497px;
-  gap: 19px;
-  padding-right: 150px;
+  gap: 20px;
+  box-sizing: border-box;
+  padding-left: 20px;
 }
 
 .contact-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 450px;
-  height: 490px;
 }
 
 .contact-form label {
-  margin-bottom: 10px;
   font-size: 18px;
-  color: #000000;
   font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
 }
 
 .contact-form input,
@@ -403,6 +415,9 @@ main section {
   border-radius: 10px;
   font-size: 20px;
   resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  color: #000;
 }
 
 .contact-form textarea {
